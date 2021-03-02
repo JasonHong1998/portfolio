@@ -1,16 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 882.163 553.532">
   <defs>
     <style>
-      .cls-1, .cls-21 {
-        fill: #6c63ff;
+      .cls-1 {
+        fill: #affefc;
+      }
+
+      .cls-21 {
+        fill: #00eaff;
       }
 
       .cls-1, .cls-10, .cls-14, .cls-9 {
-        opacity: 0.1;
+        opacity: 0.5;
       }
 
       .cls-10, .cls-2 {
-        fill: #fff;
+        fill: #c1c1c1;
       }
 
       .cls-3 {
@@ -30,23 +34,23 @@
       }
 
       .cls-7 {
-        fill: #5f546f;
+        fill: #8a4200;
       }
 
       .cls-8 {
-        fill: #ccccd8;
+        fill: #7d3c00;
       }
 
       .cls-11 {
-        fill: #c27099;
+        fill: #ffdbac;
       }
 
       .cls-12 {
-        fill: #4c4981;
+        fill: #43484a;
       }
 
       .cls-13 {
-        fill: #63345e;
+        fill: #000;
       }
 
       .cls-15 {
@@ -54,19 +58,19 @@
       }
 
       .cls-16 {
-        fill: #aea4b2;
+        fill: #2a69bd;
       }
 
       .cls-17 {
-        fill: #ffc4d0;
+        fill: #cf8434;
       }
 
       .cls-18 {
-        fill: #575989;
+        fill: #fff;
       }
 
       .cls-19 {
-        fill: #ae757a;
+        fill: #000;
       }
 
       .cls-20 {
@@ -82,7 +86,7 @@
       }
 
       .cls-24 {
-        fill: #efeeff;
+        fill: #bdfffd;
       }
     </style>
     <linearGradient id="linear-gradient" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">

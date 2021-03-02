@@ -10,8 +10,8 @@ module.exports = {
     linkedin: 'https://www.linkedin.com/in/jasonhong1998/',
   },
   googleAnalyticsID: 'UA-88875900-4',
-  themeColor: '#6b63ff',
-  backgroundColor: '#6b63ff',
+  themeColor: '#affefc',
+  backgroundColor: '#affefc',
   address: {
     city: 'Los Angeles',
     region: 'CA',

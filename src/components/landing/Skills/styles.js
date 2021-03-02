@@ -29,9 +29,9 @@ export const Details = styled.div`
   }
 
   h1 {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     font-size: 26pt;
-    color: ${({ theme }) => (theme === 'dark' ? '#fff' : '#212121')};
+    color: ${({ theme }) => (theme === 'dark' ? '#fff' : '#000')};
 
     @media (max-width: 960px) {
       mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
@@ -39,7 +39,7 @@ export const Details = styled.div`
   }
 
   p {
-    margin-bottom: 1rem;
+    margin-bottom: 2.5rem;
     font-size: 13pt;
     font-weight: normal;
     line-height: 1.3;
@@ -53,6 +53,11 @@ export const Details = styled.div`
       mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
     }
   }
+
+  b {
+    font-weight: bold;
+    color: ${({ theme }) => (theme === 'dark' ? '#fff' : '#212121')};
+  }
 `;
 
 export const Thumbnail = styled.div`
@@ -65,5 +70,29 @@ export const Thumbnail = styled.div`
 
   img {
     width: 100%;
+  }
+`;
+
+export const ProfilePic = styled.img`
+  border-radius: 50%;
+`;
+
+export const ButtonWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  @media (max-width: 960px) {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  p {
+    margin: 0 1rem;
+
+    @media (max-width: 960px) {
+      margin: 1rem 0;
+    }
   }
 `;

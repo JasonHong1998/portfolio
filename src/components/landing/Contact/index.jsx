@@ -7,7 +7,7 @@ import ContactForm from './ContactForm';
 export const Contact = () => (
   <Wrapper as={Container} id="contact">
     <Details>
-      <h2>Want to get in touch?</h2>
+      <h2>Get In Touch</h2>
       <ContactForm />
     </Details>
     <Thumbnail>

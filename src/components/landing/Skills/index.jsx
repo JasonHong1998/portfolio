@@ -2,8 +2,8 @@ import React, { useContext } from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { ThemeContext } from 'providers/ThemeProvider';
 import { Container, Button } from 'components/common';
-import dev from 'assets/illustrations/skills.svg';
-import { Wrapper, SkillsWrapper, Details, Thumbnail } from './styles';
+import dev from 'assets/illustrations/profilepic.jpg';
+import { Wrapper, SkillsWrapper, Details, Thumbnail, ProfilePic, ButtonWrapper } from './styles';
 
 export const Skills = () => {
   const { theme } = useContext(ThemeContext);
@@ -12,25 +12,31 @@ export const Skills = () => {
     <Wrapper id="about">
       <SkillsWrapper as={Container}>
         <Thumbnail>
-          <img src={dev} alt="I’m Jason and I’m a Full-Stack engineer!" />
+          <ProfilePic src={dev} alt="I’m Jason and I’m a Full-Stack engineer!" />
         </Thumbnail>
         <Details theme={theme}>
           <h1>Who am I?</h1>
           <p>
-            I'm a full-stack engineer dedicated to enhancing the lives of others by creating efficient and effective
-            solutions. My intrinsic motivation to help people has become the driving force for the applications I build.
+            Hello! I'm a software engineer based in LA that enjoys working across the stack to build powerful and
+            efficient solutions. I get excited about optimizations that improve performance and client-centered product
+            design. Did I mention that nothing is more satsifying than pixel-perfect websites? They just make me go{' '}
+            <b>*chef's kiss*</b>
           </p>
+          <h1>Do I have a life outside of work?</h1>
           <p>
-            I get excited about optimizations that improve performance, client-centered product design, and explaining
-            trends derived from real data through concrete, visual representations.
+            I live by the words "work hard, play hard." Although these days I've been working hard<b>ER</b> than I've
+            been playing, in my spare time, you can find me dancing to k-pop, binge-watching shows on Netflix, and
+            simply sharing fellowship with my friends and family.
           </p>
-          <p>
-            In my spare time, you can find me dancing to k-pop, binge-watching shows on Netflix, and simply sharing
-            fellowship with the ones I love.
-          </p>
-          <Button as={AnchorLink} href="#contact">
-            Hire me
-          </Button>
+          <ButtonWrapper>
+            <Button as={AnchorLink} href="#contact">
+              I'm Sold
+            </Button>
+            <p>-or-</p>
+            <Button as={AnchorLink} href="#applications">
+              Convince Me More
+            </Button>
+          </ButtonWrapper>
         </Details>
       </SkillsWrapper>
     </Wrapper>
