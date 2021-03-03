@@ -9,7 +9,7 @@ module.exports = {
     github: 'https://github.com/JasonHong1998',
     linkedin: 'https://www.linkedin.com/in/jasonhong1998/',
   },
-  googleAnalyticsID: 'UA-88875900-4',
+  googleAnalyticsID: 'G-E1TNV71QPR',
   themeColor: '#affefc',
   backgroundColor: '#affefc',
   address: {
