@@ -2,16 +2,23 @@ import React, { useContext } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import { ThemeContext } from 'providers/ThemeProvider';
 import { Container, Card, TitleWrap } from 'components/common';
-import Star from 'components/common/Icons/Star';
-import Fork from 'components/common/Icons/Fork';
+import Github from 'components/common/Icons/Github';
 import { Wrapper, Grid, Item, Content, Stats, Languages } from './styles';
+
+const nameObj = {
+  calendar: 'Hoon Calendar',
+  portfolio: 'Portfolio Website',
+  glearn: 'Galvanize Learn',
+  'jason-nav': 'Getsy Systems Design',
+  'overview-2': 'HipCamp Clone',
+};
 
 export const Applications = () => {
   const { theme } = useContext(ThemeContext);
   const {
     github: {
       viewer: {
-        repositories: { edges },
+        starredRepositories: { edges },
       },
     },
   } = useStaticQuery(
@@ -19,17 +26,13 @@ export const Applications = () => {
       {
         github {
           viewer {
-            repositories(first: 5, orderBy: { field: STARGAZERS, direction: DESC }) {
+            starredRepositories(first: 10, orderBy: { field: STARRED_AT, direction: DESC }) {
               edges {
                 node {
                   id
                   name
                   url
                   description
-                  stargazers {
-                    totalCount
-                  }
-                  forkCount
                   languages(first: 3) {
                     nodes {
                       id
@@ -52,20 +55,13 @@ export const Applications = () => {
           <Item key={node.id} as="a" href={node.url} target="_blank" rel="noopener noreferrer" theme={theme}>
             <Card theme={theme}>
               <Content>
-                <h4>{node.name}</h4>
+                <Stats theme={theme}>
+                  <h4>{nameObj[node.name] ? nameObj[node.name] : node.name}</h4>
+                  <Github color={theme === 'light' ? '#000' : '#fff'} />
+                </Stats>
                 <p>{node.description}</p>
               </Content>
               <TitleWrap>
-                <Stats theme={theme}>
-                  <div>
-                    <Star color={theme === 'light' ? '#000' : '#fff'} />
-                    <span>{node.stargazers.totalCount}</span>
-                  </div>
-                  <div>
-                    <Fork color={theme === 'light' ? '#000' : '#fff'} />
-                    <span>{node.forkCount}</span>
-                  </div>
-                </Stats>
                 <Stats theme={theme}>
                   <Languages>
                     {node.languages.nodes.map(({ id, name }) => (

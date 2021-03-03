@@ -1,13 +1,14 @@
 import styled from 'styled-components';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 export const Wrapper = styled.div`
   a {
     color: #000;
     text-decoration: none;
 
-		@media (max-width: 960px) {
-			color: ${({ theme }) => (theme === 'light' ? '#000' : '#fff')};
-		}
+    @media (max-width: 960px) {
+      color: ${({ theme }) => (theme === 'light' ? '#000' : '#fff')};
+    }
   }
 
   ${({ desktop }) =>
@@ -41,4 +42,14 @@ export const Wrapper = styled.div`
 					}
 			}
 	`}
+`;
+
+export const StyledAnchorLink = styled(AnchorLink)`
+  text-decoration: none;
+  box-shadow: 0 -2px 0 0 transparent inset;
+
+  &:hover {
+    transition: all 0.3s ease-out;
+    box-shadow: 0 -2px 0 0 #000 inset;
+  }
 `;

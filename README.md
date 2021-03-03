@@ -9,8 +9,8 @@
 
 1. [Demo](#Demo)
 2. [Technologies Used](#Technologies)
-3. [Credit](#Credit)
-4. [Structure](#Structure)
+3. [Credits](#Credits)
+4. [License](#License)
 
 ## Demo
 
@@ -29,7 +29,7 @@
 | Formik |
 | Google reCAPTCHA |
 
-## Credit
+## Credits
 
 A huge shoutout and thanks to Ismail Ghallou for creating this amazing Gatsby starter.
 

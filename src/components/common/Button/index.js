@@ -1,32 +1,44 @@
 import styled from 'styled-components';
 
 export const Button = styled.button`
-  display: inline-block;
   cursor: pointer;
   border-radius: 3px;
   padding: 0.7rem 2.5rem;
-  border: none;
-  -webkit-appearance: none;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
   color: #fff;
-  background: #00b0ff;
+  background-color: #000;
+  border: none;
+  outline: none;
+  position: relative;
+  z-index: 1;
+  transition: color 300ms ease-in-out;
 
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #00b0ff;
+    z-index: -1;
+    border-radius: 3px;
+
+    transition: transform 300ms ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+
+  &:hover:before,
+  &:hover:focus {
+    transform: scaleX(1);
+  }
+
+  &:hover,
   &:focus {
-    outline: none;
+    color: #000;
   }
 
   &:disabled {
     background: gray;
   }
-
-  ${({ secondary }) =>
-    secondary &&
-    `
-		background: #00b0ff;
-	`}
 `;

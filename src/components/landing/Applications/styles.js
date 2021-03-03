@@ -43,6 +43,12 @@ export const Content = styled.div`
 export const Stats = styled.div`
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+
+  h4 {
+    margin: 0;
+  }
 
   div {
     display: flex;
