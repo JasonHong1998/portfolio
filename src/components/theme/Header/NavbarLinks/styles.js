@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 export const Wrapper = styled.div`
   a {
@@ -8,6 +7,11 @@ export const Wrapper = styled.div`
 
     @media (max-width: 960px) {
       color: ${({ theme }) => (theme === 'light' ? '#000' : '#fff')};
+    }
+
+    &:hover {
+      transition: color 0.3s ease-out;
+      color: ${({ theme }) => (theme === 'light' ? 'rgba(0, 0, 0, 0.5)' : 'rgba(192, 192, 192, 0.5)')};
     }
   }
 
@@ -25,7 +29,7 @@ export const Wrapper = styled.div`
 					margin-right: 1rem;
 
 					&:last-child {
-							margin-right: unset;
+						margin-right: unset;
 					}
 			}
 		`
@@ -42,14 +46,4 @@ export const Wrapper = styled.div`
 					}
 			}
 	`}
-`;
-
-export const StyledAnchorLink = styled(AnchorLink)`
-  text-decoration: none;
-  box-shadow: 0 -2px 0 0 transparent inset;
-
-  &:hover {
-    transition: all 0.3s ease-out;
-    box-shadow: 0 -2px 0 0 #000 inset;
-  }
 `;

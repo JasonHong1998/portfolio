@@ -2,7 +2,7 @@
   <img alt="Logo" src="./static/favicon/favicon-512.png" width="200"/>
 </div>
 <h1 align="center">
-  jasonhong1998.dev
+  jasonhong1998.com
 </h1>
 
 ## Table of Contents
@@ -14,7 +14,7 @@
 
 ## Demo
 
-<p float="left"><b>Live at:</b> jasonhong1998.dev</p>
+<p float="left"><b>Live at:</b> https://www.jasonhong1998.com/</p>
 <div align="center">
   <img alt="thumbnail" src="./src/assets/thumbnail/thumbnail.png"/>
 </div>

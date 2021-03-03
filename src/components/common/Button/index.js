@@ -33,8 +33,7 @@ export const Button = styled.button`
     transform: scaleX(1);
   }
 
-  &:hover,
-  &:focus {
+  &:hover {
     color: #000;
   }
 

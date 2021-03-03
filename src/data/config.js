@@ -1,15 +1,15 @@
 module.exports = {
   defaultTitle: 'Jason Hong',
-  logo: 'https://jasonhong1998.dev/favicon/favicon-512.png',
+  logo: 'https://www.jasonhong1998.com/favicon/favicon-512.png',
   author: 'Jason Hong',
-  url: 'https://jasonhong1998.dev',
+  url: 'https://www.jasonhong1998.com/',
   legalName: 'Jason Hong',
   defaultDescription: 'I’m Jason and I’m a Full-Stack engineer!',
   socialLinks: {
     github: 'https://github.com/JasonHong1998',
     linkedin: 'https://www.linkedin.com/in/jasonhong1998/',
   },
-  googleAnalyticsID: 'G-E1TNV71QPR',
+  googleAnalyticsID: 'G-2JG876071S',
   themeColor: '#affefc',
   backgroundColor: '#affefc',
   address: {
