@@ -24,7 +24,6 @@ module.exports = {
         headers: {
           Authorization: `bearer ${process.env.GITHUB_TOKEN}`,
         },
-        fetchOptions: {},
       },
     },
     {
